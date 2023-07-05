@@ -1,6 +1,13 @@
 # Запуск приложения
 Зависимости проекта хранятся в файле `requirements.txt`
 
+Инициализация БД:
+```
+flask --app runner.py db init
+flask --app runner.py db migrate
+flask --app runner.py db upgrade
+```
+
 Запуск сервера производится командой `python runner.py`
 
 Файлы, с которыми работает сервер и БД, хранятся в папке `server_files`
